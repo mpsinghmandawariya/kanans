@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyAbroad AI Counselor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>StudyAbroad AI Counselor</h1>
+            </div>
+            <p class="tagline">Your 24/7 AI-powered study abroad advisor</p>
+        </header>
+
+        <main class="main-content">
+            <section class="chat-section">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-status">
+                            <span class="status-dot"></span>
+                            <span>AI Counselor Ready</span>
+                        </div>
+                        <button class="clear-btn" onclick="clearChat()">
+                            <i class="fas fa-trash"></i> Clear Chat
+                        </button>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Hello! I'm your AI Study Abroad Counselor. I can help you with:</p>
+                                <ul>
+                                    <li>Finding universities and courses</li>
+                                    <li>Understanding admission requirements</li>
+                                    <li>Visa application guidance</li>
+                                    <li>Scholarship information</li>
+                                </ul>
+                                <p>What would you like to know?</p>
+                                <span class="timestamp">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <div class="typing-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            placeholder="Ask me about universities, visas, admission requirements..."
+                            autocomplete="off"
+                        >
+                        <button class="send-btn" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <button class="quick-btn" onclick="quickAsk('What are the requirements for USA student visa?')">
+                        <i class="fas fa-passport"></i> USA Visa
+                    </button>
+                    <button class="quick-btn" onclick="quickAsk('Tell me about Canadian universities for Computer Science')">
+                        <i class="fas fa-university"></i> Canada CS
+                    </button>
+                    <button class="quick-btn" onclick="quickAsk('What scholarships are available for international students?')">
+                        <i class="fas fa-award"></i> Scholarships
+                    </button>
+                    <button class="quick-btn" onclick="quickAsk('What is the UK student visa process?')">
+                        <i class="fas fa-file-contract"></i> UK Visa
+                    </button>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="profile-form">
+                    <h2><i class="fas fa-user-graduate"></i> Find Your University</h2>
+                    <p class="form-subtitle">Enter your profile to get personalized recommendations</p>
+                    
+                    <form id="recommendationForm">
+                        <div class="form-group">
+                            <label>Preferred Country</label>
+                            <select id="country">
+                                <option value="">Any Country</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Germany">Germany</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Field of Study</label>
+                            <input type="text" id="field" placeholder="e.g., Computer Science, Data Science">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Budget (USD/year)</label>
+                            <input type="text" id="budget" placeholder="e.g., 50000">
+                        </div>
+
+                        <div class="form-group">
+                            <label>IELTS Score</label>
+                            <input type="text" id="ielts" placeholder="e.g., 7.0">
+                        </div>
+
+                        <div class="form-group">
+                            <label> Bachelor GPA</label>
+                            <input type="text" id="gpa" placeholder="e.g., 3.5">
+                        </div>
+
+                        <button type="submit" class="recommend-btn">
+                            <i class="fas fa-search"></i> Get Recommendations
+                        </button>
+                    </form>
+                </div>
+
+                <div class="recommendations" id="recommendations" style="display: none;">
+                    <h3><i class="fas fa-star"></i> Recommended Universities</h3>
+                    <div id="recommendationList"></div>
+                </div>
+
+                <div class="visa-cards">
+                    <h3><i class="fas fa-passport"></i> Quick Visa Info</h3>
+                    <div class="visa-card" onclick="showVisaDetails('usa')">
+                        <div class="visa-flag">🇺🇸</div>
+                        <span>USA F1 Visa</span>
+                    </div>
+                    <div class="visa-card" onclick="showVisaDetails('canada')">
+                        <div class="visa-flag">🇨🇦</div>
+                        <span>Canada Study Permit</span>
+                    </div>
+                    <div class="visa-card" onclick="showVisaDetails('uk')">
+                        <div class="visa-flag">🇬🇧</div>
+                        <span>UK Student Visa</span>
+                    </div>
+                    <div class="visa-card" onclick="showVisaDetails('australia')">
+                        <div class="visa-flag">🇦🇺</div>
+                        <span>Australia Student Visa</span>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <div class="modal" id="visaModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
