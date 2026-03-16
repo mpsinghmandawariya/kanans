@@ -1,0 +1,389 @@
+{
+  "universities": [
+    {
+      "id": 1,
+      "country": "USA",
+      "university": "Massachusetts Institute of Technology",
+      "course": "MS Computer Science",
+      "ielts": "7.0",
+      "gre": "Required",
+      "deadline": "Dec 15",
+      "tuition_fee": "$55,000",
+      "gpa_requirement": "3.5",
+      "visa_documents": ["Passport", "I-20 Form", "DS-160", "SEVIS Fee Receipt", "Bank Statement", "Transcript"]
+    },
+    {
+      "id": 2,
+      "country": "USA",
+      "university": "Stanford University",
+      "course": "MS Computer Science",
+      "ielts": "7.0",
+      "gre": "Required",
+      "deadline": "Dec 5",
+      "tuition_fee": "$56,000",
+      "gpa_requirement": "3.5",
+      "visa_documents": ["Passport", "I-20 Form", "DS-160", "SEVIS Fee Receipt", "Bank Statement"]
+    },
+    {
+      "id": 3,
+      "country": "USA",
+      "university": "University of California, Berkeley",
+      "course": "MS Data Science",
+      "ielts": "7.0",
+      "gre": "Required",
+      "deadline": "Dec 8",
+      "tuition_fee": "$48,000",
+      "gpa_requirement": "3.3",
+      "visa_documents": ["Passport", "I-20 Form", "DS-160", "SEVIS Fee Receipt", "Bank Statement"]
+    },
+    {
+      "id": 4,
+      "country": "USA",
+      "university": "Carnegie Mellon University",
+      "course": "MS Artificial Intelligence",
+      "ielts": "7.5",
+      "gre": "Required",
+      "deadline": "Dec 10",
+      "tuition_fee": "$52,000",
+      "gpa_requirement": "3.5",
+      "visa_documents": ["Passport", "I-20 Form", "DS-160", "SEVIS Fee Receipt", "Bank Statement"]
+    },
+    {
+      "id": 5,
+      "country": "Canada",
+      "university": "University of Toronto",
+      "course": "MS Computer Science",
+      "ielts": "7.0",
+      "gre": "Not Required",
+      "deadline": "Jan 15",
+      "tuition_fee": "CAD 45,000",
+      "gpa_requirement": "3.3",
+      "visa_documents": ["Passport", "Letter of Acceptance", "Proof of Funds", "Passport Photos", "Medical Exam"]
+    },
+    {
+      "id": 6,
+      "country": "Canada",
+      "university": "University of British Columbia",
+      "course": "MS Data Science",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Feb 1",
+      "tuition_fee": "CAD 42,000",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "Letter of Acceptance", "Proof of Funds", "Passport Photos"]
+    },
+    {
+      "id": 7,
+      "country": "Canada",
+      "university": "McGill University",
+      "course": "MS Electrical Engineering",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Jan 31",
+      "tuition_fee": "CAD 38,000",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "Letter of Acceptance", "Proof of Funds", "Medical Exam"]
+    },
+    {
+      "id": 8,
+      "country": "Canada",
+      "university": "University of Waterloo",
+      "course": "MS Computer Science",
+      "ielts": "7.0",
+      "gre": "Not Required",
+      "deadline": "Feb 1",
+      "tuition_fee": "CAD 40,000",
+      "gpa_requirement": "3.2",
+      "visa_documents": ["Passport", "Letter of Acceptance", "Proof of Funds"]
+    },
+    {
+      "id": 9,
+      "country": "UK",
+      "university": "University of Oxford",
+      "course": "MS Computer Science",
+      "ielts": "7.5",
+      "gre": "Not Required",
+      "deadline": "Jan 15",
+      "tuition_fee": "£35,000",
+      "gpa_requirement": "3.5",
+      "visa_documents": ["Passport", "CAS Letter", "Proof of Funds", "IELTS Score", "Tuberculosis Test"]
+    },
+    {
+      "id": 10,
+      "country": "UK",
+      "university": "Imperial College London",
+      "course": "MS Data Science",
+      "ielts": "7.0",
+      "gre": "Not Required",
+      "deadline": "Mar 30",
+      "tuition_fee": "£38,000",
+      "gpa_requirement": "3.3",
+      "visa_documents": ["Passport", "CAS Letter", "Proof of Funds", "IELTS Score"]
+    },
+    {
+      "id": 11,
+      "country": "UK",
+      "university": "University of Cambridge",
+      "course": "MS Machine Learning",
+      "ielts": "7.5",
+      "gre": "Not Required",
+      "deadline": "Dec 5",
+      "tuition_fee": "£36,000",
+      "gpa_requirement": "3.5",
+      "visa_documents": ["Passport", "CAS Letter", "Proof of Funds", "IELTS Score"]
+    },
+    {
+      "id": 12,
+      "country": "UK",
+      "university": "University College London",
+      "course": "MS Software Systems",
+      "ielts": "7.0",
+      "gre": "Not Required",
+      "deadline": "Apr 1",
+      "tuition_fee": "£32,000",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "CAS Letter", "Proof of Funds"]
+    },
+    {
+      "id": 13,
+      "country": "Australia",
+      "university": "University of Melbourne",
+      "course": "MS Computer Science",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Jun 30",
+      "tuition_fee": "AUD 45,000",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "COE", "Genuine Student Requirement", "Proof of Funds", "OSHC"]
+    },
+    {
+      "id": 14,
+      "country": "Australia",
+      "university": "Australian National University",
+      "course": "MS Data Science",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Aug 31",
+      "tuition_fee": "AUD 42,000",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "COE", "Genuine Student Requirement", "Proof of Funds"]
+    },
+    {
+      "id": 15,
+      "country": "Australia",
+      "university": "University of Sydney",
+      "course": "MS Information Technology",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Jul 15",
+      "tuition_fee": "AUD 44,000",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "COE", "Genuine Student Requirement", "Proof of Funds", "OSHC"]
+    },
+    {
+      "id": 16,
+      "country": "Germany",
+      "university": "Technical University of Munich",
+      "course": "MS Computer Science",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Mar 31",
+      "tuition_fee": "€0",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "Admission Letter", "Proof of Funds", "Blocked Account"]
+    },
+    {
+      "id": 17,
+      "country": "Germany",
+      "university": "Heidelberg University",
+      "course": "MS Data Analytics",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Jul 15",
+      "tuition_fee": "€1,500",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "Admission Letter", "Proof of Funds", "Blocked Account"]
+    },
+    {
+      "id": 18,
+      "country": "Germany",
+      "university": "Karlsruhe Institute of Technology",
+      "course": "MS Electrical Engineering",
+      "ielts": "6.5",
+      "gre": "Not Required",
+      "deadline": "Mar 31",
+      "tuition_fee": "€0",
+      "gpa_requirement": "3.0",
+      "visa_documents": ["Passport", "Admission Letter", "Proof of Funds", "Blocked Account"]
+    },
+    {
+      "id": 19,
+      "country": "USA",
+      "university": "Georgia Tech",
+      "course": "MS Computer Science",
+      "ielts": "7.0",
+      "gre": "Required",
+      "deadline": "Dec 15",
+      "tuition_fee": "$28,000",
+      "gpa_requirement": "3.3",
+      "visa_documents": ["Passport", "I-20 Form", "DS-160", "SEVIS Fee Receipt", "Bank Statement"]
+    },
+    {
+      "id": 20,
+      "country": "USA",
+      "university": "University of Michigan",
+      "course": "MS Data Science",
+      "ielts": "7.0",
+      "gre": "Required",
+      "deadline": "Dec 15",
+      "tuition_fee": "$45,000",
+      "gpa_requirement": "3.3",
+      "visa_documents": ["Passport", "I-20 Form", "DS-160", "SEVIS Fee Receipt", "Bank Statement"]
+    }
+  ],
+  "visa_info": {
+    "usa": {
+      "name": "USA F1 Student Visa",
+      "description": "The F-1 visa is for academic students who want to attend an accredited US college or university.",
+      "requirements": [
+        "Valid passport",
+        "I-20 form from your US university",
+        "DS-160 confirmation page",
+        "SEVIS fee payment receipt",
+        "Proof of financial support",
+        "Passport-sized photo",
+        "Visa interview appointment"
+      ],
+      "process": [
+        "Get accepted to a SEVIS-approved university",
+        "Receive I-20 form from university",
+        "Pay SEVIS fee",
+        "Complete DS-160 form",
+        "Schedule visa interview",
+        "Attend interview at US Embassy/Consulate"
+      ],
+      "processing_time": "3-5 weeks"
+    },
+    "canada": {
+      "name": "Canada Study Permit",
+      "description": "A study permit allows foreign nationals to study at designated learning institutions in Canada.",
+      "requirements": [
+        "Valid passport",
+        "Letter of acceptance from DL",
+        "Proof of financial support",
+        "Passport-sized photos",
+        "Immigration medical examination",
+        "Police certificate"
+      ],
+      "process": [
+        "Apply to a designated learning institution",
+        "Receive letter of acceptance",
+        "Gather required documents",
+        "Apply for study permit online",
+        "Attend biometric appointment",
+        "Wait for processing"
+      ],
+      "processing_time": "8-12 weeks"
+    },
+    "uk": {
+      "name": "UK Student Visa (Tier 4)",
+      "description": "The Student Visa allows you to study at a UK university.",
+      "requirements": [
+        "Valid passport",
+        "Confirmation of Acceptance for Studies (CAS)",
+        "Proof of English language proficiency",
+        "Proof of financial support",
+        "Tuberculosis test results"
+      ],
+      "process": [
+        "Receive CAS from your UK university",
+        "Gather required documents",
+        "Apply online for student visa",
+        "Pay immigration health surcharge",
+        "Attend biometric appointment",
+        "Wait for visa decision"
+      ],
+      "processing_time": "3-8 weeks"
+    },
+    "australia": {
+      "name": "Australia Student Visa (Subclass 500)",
+      "description": "The Subclass 500 visa allows you to study full-time in Australia.",
+      "requirements": [
+        "Valid passport",
+        "Confirmation of Enrolment (COE)",
+        "Genuine Student (GS) requirement",
+        "Overseas Student Health Cover (OSHC)",
+        "Proof of financial capacity",
+        "English language proficiency"
+      ],
+      "process": [
+        "Get enrolled at an Australian institution",
+        "Receive your Confirmation of Enrolment (COE)",
+        "Purchase OSHC",
+        "Apply for visa online",
+        "Provide biometrics",
+        "Wait for visa grant"
+      ],
+      "processing_time": "4-12 weeks"
+    }
+  },
+  "scholarships": [
+    {
+      "name": "Fulbright Scholarship",
+      "country": "USA",
+      "description": "Full funding for graduate students to study in USA",
+      "eligibility": "Bachelor's degree, IELTS 6.5+, strong academics",
+      "deadline": "Varies by country"
+    },
+    {
+      "name": "Chevening Scholarship",
+      "country": "UK",
+      "description": "Full funding for master's students to study in UK",
+      "eligibility": "2+ years work experience, IELTS 6.5+",
+      "deadline": "November annually"
+    },
+    {
+      "name": "Commonwealth Scholarship",
+      "country": "UK",
+      "description": "Funding for students from Commonwealth countries",
+      "eligibility": "Commonwealth citizenship, first degree",
+      "deadline": "September annually"
+    },
+    {
+      "name": "Vanier Canada Graduate Scholarships",
+      "country": "Canada",
+      "description": "$50,000 per year for doctoral students",
+      "eligibility": "GPA 3.5+, leadership skills",
+      "deadline": "Early November"
+    },
+    {
+      "name": "Australia Awards Scholarship",
+      "country": "Australia",
+      "description": "Full funding for students from eligible countries",
+      "eligibility": "Meet country eligibility criteria",
+      "deadline": "Varies by country"
+    }
+  ],
+  "general_info": {
+    "ielts_requirements": {
+      "usa": "Typically 6.5-7.5 for most universities",
+      "canada": "Typically 6.5-7.0 for most universities",
+      "uk": "Typically 6.5-7.5 for most universities",
+      "australia": "Typically 6.5 for most universities",
+      "germany": "Typically 6.5 for most universities"
+    },
+    "gre_requirements": {
+      "usa": "Most top universities require GRE",
+      "canada": "Generally not required",
+      "uk": "Generally not required",
+      "australia": "Generally not required",
+      "germany": "Generally not required"
+    },
+    "work_permit": {
+      "usa": "F1 students can work 20 hours on-campus, CPT/OPT available after 1 year",
+      "canada": "Work up to 20 hours/week during studies, PGWP after graduation",
+      "uk": "Work up to 20 hours/week during term time",
+      "australia": "Work up to 48 hours per fortnight during study"
+    }
+  }
+}
